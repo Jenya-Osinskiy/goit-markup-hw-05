@@ -300,7 +300,9 @@
 
     <div class="modal-overlay">
         <div class="modal">
-            <button type="button">X</button>
+            <button class="modal-close-but" type="button"><svg class="modal-close-svg" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-but"></use>
+                </svg></button>
             <p class="modal-text">Leave your contacts and we will call you back</p>
             <form class="modal-form">
                 <label class="modal-form-label">Name
@@ -327,12 +329,27 @@
                         </svg>
                     </div>
                 </label>
-                <label class="modal-form-label">Comment<textarea name="description" id="" rows="5"
-                        placeholder="Text input" class="modal-form-des"></textarea></label>
-                <label>
 
-                    I accept the terms and conditions of the Privacy Policy
+                <label class="modal-form-label">Comment
+                    <div class="modal-field"><textarea name="description" id="" rows="5" placeholder="Text input"
+                            class="modal-form-des"></textarea>
+                    </div>
                 </label>
+
+                <div class="modal-privacy">
+                    <input type="checkbox" name="privacy" id="privacy" required class="modal-check visually-hidden">
+                    <label for="privacy" class="modal-label-privacy">
+                        <span>
+                            <svg class="modal-privacy-svg" width="12" height="12">
+                                <use href="./images/icons.svg#icon-privacy"></use>
+                            </svg>
+                        </span>
+
+                        I accept the terms and conditions of the <a href="#" class="modal-privacy-text">Privacy
+                            Policy</a>
+
+                    </label>
+                </div>
 
                 <button type="submit" class="modal-form-but">Send</button>
             </form>
