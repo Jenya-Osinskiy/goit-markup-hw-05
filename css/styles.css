@@ -632,19 +632,19 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
-}
-
-
- .down-sub-form input {
-    font-family: "Roboto", sans-serif;
+    padding: 8px 0 8px 16px;
+    outline: transparent;
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
     color: #fff;
-    padding: 8px 0 8px 16px;
-    
-} 
+}
+
+.down-sub-mail::placeholder {
+    color: #fff;
+}
+
 
 .down-sub-icon {
 margin-left: 16px;
